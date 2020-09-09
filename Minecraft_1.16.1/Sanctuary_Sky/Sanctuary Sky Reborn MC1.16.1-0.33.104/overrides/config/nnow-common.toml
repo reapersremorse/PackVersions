@@ -1,0 +1,138 @@
+
+#Configuration related to the Poking Sticks
+["Poking Stick"]
+	"Base Poking Stick durability  modifier" = 64
+	"Stone Poking Stick durability  modifier" = 256
+	#Range: 0.0 ~ 1.0
+	"Sapling drop chance modifier" = 0.75
+	"Iron Poking Stick durability  modifier" = 512
+	#Range: 0.0 ~ 1.0
+	"Cactus drop chance modifier" = 0.5
+
+#Configuration related to the 3x3 mining tools
+["3x3 Tools"]
+
+	#Tier speed modifier
+	["3x3 Tools".Speed]
+		#Range: 1.0 ~ 10.0
+		"Netherite Tier speed modifier" = 1.0
+		#Range: 1.0 ~ 10.0
+		"Stone Tier speed modifier" = 4.5
+		#Range: 1.0 ~ 10.0
+		"Emerald Tier speed modifier" = 2.0
+		#Range: 1.0 ~ 10.0
+		"Iron Tier speed modifier" = 3.5
+		#Range: 1.0 ~ 10.0
+		"Golden Tier speed modifier" = 2.0
+		#Range: 1.0 ~ 10.0
+		"Diamond Tier speed modifier" = 2.0
+
+	#Tier durability modifier
+	["3x3 Tools".Durability]
+		"Iron Tier durability modifier" = 375
+		"Diamond Tier durability modifier" = 2732
+		"Netherite Tier durability modifier" = 3047
+		"Stone Tier durability modifier" = 197
+		"Emerald Tier durability modifier" = 2732
+		"Golden Tier durability modifier" = 48
+
+#Configuration related to the Traps blocks 
+[Traps]
+	"Goldern monster trap attack power modifier" = 6
+	"Diamond monster trap attack power modifier" = 10
+	"Wither monster trap attack power modifier" = 320
+
+#Configuration related to Cobblestone Generator
+["Cobblestone Generator"]
+
+	#Cobblestone return amount
+	["Cobblestone Generator".Returns]
+		"Netherite Pickaxe cobblestone return amount" = 64
+		"Emerald Hammer cobblestone return amount" = 64
+		"Wooden Pickaxe cobblestone return amount" = 8
+		"Stone Pickaxe cobblestone return amount" = 16
+		"Iron Pickaxe cobblestone return amount" = 32
+		"Golden Pickaxe cobblestone return amount" = 32
+		"Diamond Pickaxe cobblestone return amount" = 64
+
+	#Durability cost
+	["Cobblestone Generator".Costs]
+		"Iron Pickaxe durability cost" = 32
+		"Wooden Pickaxe durability cost" = 8
+		"Golden Pickaxe durability cost" = 32
+		"Emerald Hammer durability cost" = 64
+		"Stone Pickaxe durability cost" = 16
+		"Netherite Pickaxe durability cost" = 64
+		"Diamond Pickaxe durability cost" = 64
+
+#Configuration related to the Magnet item
+[Magnet]
+	#Magnet max pickup range modifier.
+	#Range: 1 ~ 16
+	"Pickup Range" = 8
+
+#Configuration related to the Booshelf Stairs and Slab
+[Bookshelf]
+	#Enchant power level modifier.
+	#Range: 1 ~ 16
+	"Enchant Level" = 1
+
+#Configuration related to general settings
+[General]
+	"Gives the player the Troll item(s) when loading into a world" = true
+	"Metal blocks items and berrys are loaded" = true
+
+#Configuration related to the Berry Bushes in world drops
+[Berrys]
+
+	[Berrys.Dusts]
+		"Stone dust" = 8
+		"Gravel dust" = 8
+		"Sand dust" = 8
+		"Dirt dust" = 8
+		"Clay balls" = 8
+
+	[Berrys.Nuggets]
+		"Ice Nuggets" = 2
+		"Wooden Nuggets" = 16
+		"Iron Nuggets" = 2
+		"XP Orbs" = 64
+		"Lapis Nuggets" = 2
+		"Emerald Nuggets" = 2
+		"Gold Nuggets" = 2
+		"Fire Nuggets" = 2
+		"Quartz Nuggets" = 2
+		"Diamond Nuggets" = 2
+		"Netherite Nuggets" = 2
+		"Coal Nuggets" = 2
+		"Redstone Nuggets" = 2
+
+	[Berrys."Damage Settings"]
+		"Berry Bushes do damage" = true
+		"Berry Bushes attack power modifier" = 1
+
+	[Berrys."Metal Berrys Bush Nuggets"]
+		"Zinc Nuggets" = 2
+		"Copper Nuggets" = 2
+		"Osmium Nuggets" = 2
+		"Bismuth Nuggets" = 2
+		"Nickel Nuggets" = 2
+		"Tin Nuggets" = 2
+		"Sliver Nuggets" = 2
+		"Aluminum Nuggets" = 2
+		"Platinum Nuggets" = 2
+		"Uranium Nuggets" = 2
+		"Lead Nuggets" = 2
+		"Iridium Nuggets" = 2
+
+#Configuration related to the Viagre item
+[Viagre]
+	"VIAGRA has a durability cost when in main hand" = true
+	#Tick Delay modifier. (Lower is faster)
+	#Range: 1 ~ 20
+	"Tick Delay" = 5
+	#Growth radius size modifier.
+	#Range: 1 ~ 16
+	"Growth Radius" = 8
+	"VIAGRA durability modifier" = 2342
+

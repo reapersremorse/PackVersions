@@ -1,0 +1,35 @@
+#Base energy generation for Flux Generator
+#Range: > 0
+fluxGenBaseEnergyValue = 40
+#Energy usage for basic machines (Grinding Mill, Washer, etc.)
+#Range: 1 ~ 1000
+basicMachineEnergyUsage = 40
+#Energy usage for Digger
+#Range: 1 ~ 1000
+diggerEnergyUsage = 200
+#Energy usage for Farmer
+#Range: 1 ~ 1000
+farmerEnergyUsage = 100
+#Energy usage for Butcher
+#Range: 1 ~ 1000
+butcherEnergyUsage = 700
+#Energy usage for Mob Pounder
+#Range: 1 ~ 1000
+mobPounderEnergyUsage = 1000
+#Energy usage for Item Absorber
+#Range: 1 ~ 1000
+itemAbsorberEnergyUsage = 100
+#Energy usage for Online Market
+#Range: 1 ~ 1000
+onlineMarketEnergyUsage = 200
+#Order of preferred mod names for item recipe results.
+#Empty list means that first item available from specific tag is chosen.
+#First mod name has the highest priority.
+#Add "jaopca" to ignore all tag recipes.
+preferModCompat = []
+#Disable Ore Generation
+disableOres = false
+#A blacklist for recipe compatibility with other mods.
+#Put names of recipe types you don't want them to work with Flux machines (like "minecraft:smelting").
+blacklistCompatRecipes = []
+

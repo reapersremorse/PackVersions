@@ -1,0 +1,147 @@
+add transmutation recipes for most items in vanilla that are base items.
+
+use infusion crystals for the crafting (ph stone)
+
+
+
+//import crafttweaker.api.item.StringData;
+//import mods.jei.JEI;
+
+//<minecraft:apple>.addTooltip("Storage,what can i say more?");
+
+//val pebble = <item:botania:pebble>;
+//var wstick = <item:minecraft:stick>;
+
+//mods.extendedcrafting.TableCrafting.addShapeless("twoxtwostonepickaxe", 0, <item:minecraft:stone_axe>, [pebble, pebble, pebble, wstick]);
+//craftingTable.addShapeless("twoxtwostonepickaxectable", <item:minecraft:stone_axe>, [pebble, pebble, pebble, wstick]);
+
+//VARS
+
+val warped_nylium = <item:minecraft:warped_nylium>;
+val crimson_nylium = <item:minecraft:crimson_nylium>;
+val podzol = <item:minecraft:podzol>;
+val dirt = <item:minecraft:dirt>;
+val grass_block = <item:minecraft:grass_block>;
+val andesite = <item:minecraft:andesite>;
+val diorite = <item:minecraft:diorite>;
+val granite = <item:minecraft:granite>;
+val cobblestone = <item:minecraft:cobblestone>;
+val shroomlight = <item:minecraft:shroomlight>;
+val bell = <item:minecraft:bell>;
+val  = <item:minecraft:lily_pad>;
+val  = <item:minecraft:vine>;
+val  = <item:minecraft:cactus>;
+val  = <item:minecraft:bamboo>;
+val  = <item:minecraft:kelp>;
+val  = <item:minecraft:sugar_cane>;
+val  = <item:minecraft:red_mushroom>;
+val  = <item:minecraft:brown_mushroom>;
+val  = <item:minecraft:prismarine_shard>;
+val  = <item:minecraft:prismarine_crystals>;
+val  = <item:minecraft:popped_chorus_fruit>;
+val  = <item:minecraft:ice>;
+val  = <item:minecraft:snow_block>;
+val  = <item:minecraft:clay>;
+val  = <item:minecraft:netherrack>;
+val  = <item:minecraft:soul_sand>;
+val  = <item:minecraft:basalt>;
+val  = <item:minecraft:glowstone>;
+val  = <item:minecraft:mycelium>;
+val  = <item:minecraft:end_stone>;
+val  = <item:minecraft:quartz>;
+val  = <item:minecraft:coal>;
+val  = <item:minecraft:obsidian>;
+val  = <item:minecraft:gravel>;
+val  = <item:minecraft:sand>;
+val  = <item:minecraft:gunpowder>;
+val  = <item:minecraft:netherite_scrap>;
+val  = <item:minecraft:gold_ingot>;
+val  = <item:minecraft:iron_ingot>;
+val  = <item:minecraft:diamond>;
+val  = <item:minecraft:elytra>.withTag({Damage: 0 as int});
+val  = <item:minecraft:slime_ball>;
+val  = <item:minecraft:redstone>;
+val  = <item:minecraft:bee_nest>;
+val  = <item:minecraft:nautilus_shell>;
+val  = <item:minecraft:nether_wart>;
+val  = <item:minecraft:spider_eye>;
+val  = <item:minecraft:fermented_spider_eye>;
+val  = <item:minecraft:bone>;
+val  = <item:minecraft:emerald>;
+val  = <item:minecraft:nether_star>;
+val  = <item:minecraft:name_tag>;
+val  = <item:minecraft:phantom_membrane>;
+val  = <item:minecraft:shulker_shell>;
+val  = <item:minecraft:totem_of_undying>;
+val  = <item:minecraft:spawner>;
+val  = <item:minecraft:heart_of_the_sea>;
+val  = <item:minecraft:ghast_tear>;
+val  = <item:minecraft:blaze_rod>;
+val  = <item:minecraft:ender_pearl>;
+
+val  = <item:silentgems:chaos_silver_ingot>;
+val  = <item:silentgems:chaos_gold_ingot>;
+val  = <item:silentgems:chaos_iron_ingot>;
+val  = <item:silentgems:silver_ingot>;
+val  = <item:silentgear:azure_electrum_ingot>;
+val  = <item:silentgear:azure_silver_ingot>;
+val  = <item:silentgear:blaze_gold_ingot>;
+val  = <item:silentgear:crimson_steel_ingot>;
+val  = <item:silentgear:crimson_iron_ingot>;
+val  = <item:mekanism:ingot_osmium>;
+val  = <item:mekanism:ingot_refined_glowstone>;
+val  = <item:mekanism:ingot_refined_obsidian>;
+val  = <item:silents_mechanisms:enderium_ingot>;
+val  = <item:silents_mechanisms:lumium_ingot>;
+val  = <item:silents_mechanisms:signalum_ingot>;
+val  = <item:silents_mechanisms:bismuth_steel_ingot>;
+val  = <item:silents_mechanisms:aluminum_steel_ingot>;
+val  = <item:silents_mechanisms:bismuth_brass_ingot>;
+val  = <item:silents_mechanisms:steel_ingot>;
+val  = <item:silents_mechanisms:electrum_ingot>;
+val  = <item:silents_mechanisms:invar_ingot>;
+val  = <item:silents_mechanisms:copper_ingot>;
+val  = <item:silents_mechanisms:tin_ingot>;
+val  = <item:silents_mechanisms:silver_ingot>;
+val  = <item:silents_mechanisms:lead_ingot>;
+val  = <item:silents_mechanisms:nickel_ingot>;
+val  = <item:silents_mechanisms:platinum_ingot>;
+val  = <item:silents_mechanisms:zinc_ingot>;
+val  = <item:silents_mechanisms:bismuth_ingot>;
+val  = <item:silents_mechanisms:aluminum_ingot>;
+val  = <item:silents_mechanisms:uranium_ingot>;
+val  = <item:silents_mechanisms:bronze_ingot>;
+val  = <item:silents_mechanisms:brass_ingot>;
+val  = <item:silents_mechanisms:compressed_iron_ingot>;
+val  = <item:silents_mechanisms:refined_iron_ingot>;
+val  = <item:silents_mechanisms:redstone_alloy_ingot>;
+val  = <item:mysticalagriculture:tertium_ingot>;
+val  = <item:mysticalagriculture:imperium_ingot>;
+val  = <item:mysticalagriculture:supremium_ingot>;
+val  = <item:mysticalagradditions:insanium_ingot>;
+val  = <item:mysticalagriculture:soulium_ingot>;
+val  = <item:extendedcrafting:black_iron_ingot>;
+val  = <item:extendedcrafting:redstone_ingot>;
+val  = <item:extendedcrafting:ender_ingot>;
+val  = <item:extendedcrafting:enhanced_ender_ingot>;
+val  = <item:bluepower:blue_alloy_ingot>;
+val  = <item:bluepower:red_alloy_ingot>;
+val  = <item:bluepower:purple_alloy_ingot>;
+val  = <item:powah:steel_energized>;
+val  = <item:industrialforegoing:pink_slime_ingot>;
+val  = <item:industrialforegoing:plastic>;
+val  = <item:bluepower:tungsten_ingot>;
+val  = <item:bluepower:tungsten_carbide>;
+val  = <item:industrialmeat:cooked_meat_ingot>;
+val  = <item:upgradednetherite:phantom_upgraded_netherite_ingot>;
+val  = <item:upgradednetherite:poison_upgraded_netherite_ingot>;
+val  = <item:upgradednetherite:wither_upgraded_netherite_ingot>;
+val  = <item:upgradednetherite:water_upgraded_netherite_ingot>;
+val  = <item:upgradednetherite:ender_upgraded_netherite_ingot>;
+val  = <item:upgradednetherite:fire_upgraded_netherite_ingot>;
+val  = <item:upgradednetherite:gold_upgraded_netherite_ingot>;
+val  = <item:extendedcrafting:the_ultimate_ingot>;
+val  = <item:extendedcrafting:crystaltine_ingot>;
+val  = <item:mysticalagriculture:prosperity_ingot>;
+val  = <item:mysticalagriculture:inferium_ingot>;
+val  = <item:mysticalagriculture:prudentium_ingot>;

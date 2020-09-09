@@ -1,0 +1,204 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 9/7/20 10:08 PM
+Description: Exception ticking world
+
+java.lang.IllegalArgumentException: Cannot set property BooleanProperty{name=east, clazz=class java.lang.Boolean, values=[true, false]} as it does not exist in Block{crossroads:ore_copper}
+	at net.minecraft.state.StateHolder.func_206870_a(SourceFile:114) ~[?:?] {re:classloading,re:mixin}
+	at net.minecraft.block.VineBlock.func_196544_a(VineBlock.java:228) ~[?:?] {re:classloading}
+	at net.minecraft.block.VineBlock.func_225542_b_(VineBlock.java:212) ~[?:?] {re:classloading}
+	at net.minecraft.block.AbstractBlock$AbstractBlockState.func_227034_b_(AbstractBlock.java:617) ~[?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:kubejs.mixins.json:AbstractBlockStateMixin,pl:mixin:A}
+	at net.minecraft.world.server.ServerWorld.func_217441_a(ServerWorld.java:501) ~[?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,xf:fml:quark:change-sleeping-player-count,xf:fml:quark:add-rave-hook}
+	at net.minecraft.world.server.ServerChunkProvider.func_241099_a_(SourceFile:390) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.server.ServerChunkProvider$$Lambda$14479/1410654785.accept(Unknown Source) ~[?:?] {}
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[?:1.8.0_51] {}
+	at net.minecraft.world.server.ServerChunkProvider.func_217220_m(SourceFile:368) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.server.ServerChunkProvider.func_217207_a(SourceFile:337) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.server.ServerWorld.func_72835_b(ServerWorld.java:326) ~[?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,xf:fml:quark:change-sleeping-player-count,xf:fml:quark:add-rave-hook}
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:852) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:788) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:81) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:643) [?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$func_240784_a_$0(MinecraftServer.java:230) [?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer$$Lambda$14093/367535789.run(Unknown Source) [?:?] {}
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_51] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.state.StateHolder.func_206870_a(SourceFile:114)
+	at net.minecraft.block.VineBlock.func_196544_a(VineBlock.java:228)
+	at net.minecraft.block.VineBlock.func_225542_b_(VineBlock.java:212)
+	at net.minecraft.block.AbstractBlock$AbstractBlockState.func_227034_b_(AbstractBlock.java:617)
+	at net.minecraft.world.server.ServerWorld.func_217441_a(ServerWorld.java:501)
+	at net.minecraft.world.server.ServerChunkProvider.func_241099_a_(SourceFile:390)
+	at net.minecraft.world.server.ServerChunkProvider$$Lambda$14479/1410654785.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at net.minecraft.world.server.ServerChunkProvider.func_217220_m(SourceFile:368)
+	at net.minecraft.world.server.ServerChunkProvider.func_217207_a(SourceFile:337)
+	at net.minecraft.world.server.ServerWorld.func_72835_b(ServerWorld.java:326)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayerEntity['reapersremorse'/235, l='ServerLevel[Sanctuary Default World]', x=-87.73, y=70.00, z=192.52]]
+	Chunk stats: ServerChunkCache: 2209
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-80,68,211), Chunk: (at 0,4,3 in -5,13; contains blocks -80,0,208 to -65,255,223), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 14930 game time, 1139 day time
+	Level name: Sanctuary Default World
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: true
+	Level weather: Rain time: 23009 (now: false), thunder time: 157297 (now: false)
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:852)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:788)
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:81)
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:643)
+	at net.minecraft.server.MinecraftServer.lambda$func_240784_a_$0(MinecraftServer.java:230)
+	at net.minecraft.server.MinecraftServer$$Lambda$14093/367535789.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.1
+	Minecraft Version ID: 1.16.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1827484800 bytes (1742 MB) / 5346164736 bytes (5098 MB) up to 9544663040 bytes (9102 MB)
+	CPUs: 16
+	JVM Flags: 5 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx10240m -Xms256m -XX:PermSize=256m
+	ModLauncher: 6.1.1+74+master.966c698
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.3-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.1-32.0.108.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.1-32.0.108.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.1-32.0.108.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.1-32.0.108.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.1-32.0.108.jar fml TRANSFORMATIONSERVICE 
+		/MixinBootstrap-1.0.3.jar mixinbootstrap TRANSFORMATIONSERVICE 
+	FML: 32.0
+	Forge: net.minecraftforge:32.0.108
+	FML Language Providers: 
+		javafml@32.0
+		minecraft@1
+	Mod List: 
+		NetherPortalFix_1.16.1-7.0.1.jar NetherPortalFix {netherportalfix@7.0.1 DONE}
+		aiotbotania-1.16.2-1.3.1.jar AIOT Botania {aiotbotania@1.3.1 DONE}
+		pocketstorage-1.16.1-0.7.3.jar Pocket Storage Unit {pocketstorage@1.16.1-0.7.3 DONE}
+		ExtendedCrafting-1.16.1-3.0.1.jar Extended Crafting {extendedcrafting@3.0.1 DONE}
+		torohealth-1.16.1-forge-2.jar ToroHealth {torohealth@NONE DONE}
+		SilentMechanisms-1.16.1-0.8.1+62.jar Silent's Mechanisms {silents_mechanisms@0.8.1+62 DONE}
+		Neat 1.7-23.jar Neat {neat@1.7-23 DONE}
+		essentials-1.16.1-2.8.4.jar Essentials {essentials@1.16.1-2.8.4 DONE}
+		XaerosWorldMap_1.10.1_Forge_1.16.1.jar Xaero's World Map {xaeroworldmap@1.10.1 DONE}
+		dankstorage-3.8.jar Dank Storage {dankstorage@3.8 DONE}
+		Powah-1.16.1-2.2.0.jar Powah {powah@2.2.0 DONE}
+		buildinggadgets-3.5.1.jar Building Gadgets {buildinggadgets@3.5.1 DONE}
+		ForgivingVoid_1.16.1-5.0.0.jar Forgiving Void {forgivingvoid@5.0.0 DONE}
+		ironshulkerboxes-1.16.1-5.0.1.jar Iron Shulker Boxes {ironshulkerbox@1.16.1-5.0.1 DONE}
+		Morpheus-1.16.1-4.2.55.jar Morpheus {morpheus@version DONE}
+		MekanismGenerators-1.16.1-10.0.9.432.jar Mekanism: Generators {mekanismgenerators@10.0.9 DONE}
+		speedyhoppers-1.16.1-1.jar Speedy Hoppers {speedyhoppers@1.16.1-1 DONE}
+		Ma-Essentials-1.16.1-3.2.5.jar Ma Essentials {maessentials@1.16.1-3.2.5 DONE}
+		JustEnoughResources-1.16.1-0.11.1.98.jar Just Enough Resources {jeresources@0.11.1.98 DONE}
+		shetiphiancore-1.16-3.8.0.jar ShetiPhian-Core {shetiphiancore@3.8.0 DONE}
+		MysticalAgradditions-1.16.1-4.0.0.jar Mystical Agradditions {mysticalagradditions@4.0.0 DONE}
+		cobblegenrandomizer-1.16.2-3.0.jar CobbleGenRandomizer {cobblegenrandomizer@1.16.2-3.0 DONE}
+		refinedstorage-1.9.2.jar Refined Storage {refinedstorage@1.9.2 DONE}
+		Upgraded Netherite 1.16.1 - 1.5.1.jar Upgraded Netherite {upgradednetherite@1.5.0 DONE}
+		w2w-1.16.1-0.0.4.0.jar w2w {w2w@NONE DONE}
+		industrial-foregoing-1.16.1-3.0.5-7e692e4.jar Industrial Foregoing {industrialforegoing@3.0.5 DONE}
+		torchmaster-2.3.2-alpha.jar Torchmaster {torchmaster@2.3.2-alpha DONE}
+		Overloaded Compressed Blocks-1.16.1-1.0.13.jar Overloaded Compressed Blocks {overloaded_cb@1.16.1-1.0.13 DONE}
+		endertanks-1.16-1.9.0.jar EnderTanks {endertanks@1.9.0 DONE}
+		MekanismAdditions-1.16.1-10.0.9.432.jar Mekanism: Additions {mekanismadditions@10.0.9 DONE}
+		Lollipop-1.16.1-3.0.0.jar Lollipop {lollipop@3.0.0 DONE}
+		ironfurnaces-1.16.1-2.1.1.jar Iron Furnaces {ironfurnaces@2.1.1 DONE}
+		industrialmeat-1.16-1.0.3.jar Industrial Meat {industrialmeat@1.0.3 DONE}
+		SilentGear-1.16.1-2.1.1+162.jar Silent Gear {silentgear@2.1.1+162 DONE}
+		curios-FORGE-1.16.1-3.0.0.2.jar Curios API {curios@FORGE-1.16.1-3.0.0.2 DONE}
+		Botania-1.16.1-403.1.jar Botania {botania@1.16.1-403.1 DONE}
+		gardenofglass-1.4.jar Garden of Glass {gardenofglass@1.4 DONE}
+		Patchouli-1.16-39.jar Patchouli {patchouli@1.16-39 DONE}
+		blockcarpentry-1.16.1-0.1.0.jar BlockCarpentry {blockcarpentry@1.16.1-0.1.0 DONE}
+		MysticalCustomization-1.16.1-2.0.0.jar Mystical Customization {mysticalcustomization@2.0.0 DONE}
+		elevatorid-1.16.1-1.7.3.jar Elevator Mod {elevatorid@1.16.1-1.7.3 DONE}
+		ftb-ultimine-1.1.0.6.jar FTB Ultimine {ftbultimine@1.1.0.6 DONE}
+		MekanismTools-1.16.1-10.0.9.432.jar Mekanism: Tools {mekanismtools@10.0.9 DONE}
+		wormhole-1.0.9-mc1.16.1.jar Wormhole (Portals) {wormhole@1.0.9 DONE}
+		cc-tweaked-1.16.1-1.90.3.jar CC: Tweaked {computercraft@1.90.3 DONE}
+		AI-Improvements-1.16.1-0.3.0.jar AI-Improvements {aiimprovements@0.3.0 DONE}
+		cloth-config-forge-4.0.2.jar Cloth Config v4 API {cloth-config@4.0 DONE}
+		trashcans-1.0.3-mc1.16.1.jar Trash Cans {trashcans@1.0.3 DONE}
+		speedyladders-1.16.1-1.jar Speedy Ladders {speedyladders@1.16.1-1 DONE}
+		CobbleForDays-1.2.0.jar Cobble For Days {cobblefordays@1.2.0 DONE}
+		Cyclic-1.16.1-0.6.1.jar Cyclic {cyclic@1.16.1-0.6.1 DONE}
+		BetterAdvancements-1.16.1-0.1.0.100.jar Better Advancements {betteradvancements@0.1.0.100 DONE}
+		JustMoreCakes-1.0_MC1.16.1_beta.jar Just More Cake! {jmc@1.0 DONE}
+		QuarkOddities-1.15.2.jar Quark Oddities {quarkoddities@1.15.2 DONE}
+		ClientTweaks_1.16.1-5.0.0.jar Client Tweaks {clienttweaks@5.0.0 DONE}
+		Cucumber-1.16.1-4.0.2.jar Cucumber Library {cucumber@4.0.2 DONE}
+		TrashSlot_1.16.1-12.0.1.jar TrashSlot {trashslot@12.0.1 DONE}
+		EnderRift-1.16.1-2.2.6.jar Ender-Rift {enderrift@2.2.6 DONE}
+		craftingstation-4.0.0a.jar Crafting Station {craftingstation@4.0.0a DONE}
+		jei-1.16.1-7.0.1.10.jar Just Enough Items {jei@7.0.1.10 DONE}
+		kubejs-2.7.2.59.jar KubeJS {kubejs@2.7.2.59 DONE}
+		Mekanism-1.16.1-10.0.9.432.jar Mekanism {mekanism@10.0.9 DONE}
+		JasonsFlyMod_1.1.0_Forge_1.16.1.jar Fly Mod {flymod@1.1.0 DONE}
+		invtweaks-1.16.2-1.0.0.jar Inventory Tweaks Renewed {invtweaks@1.16.2-1.0.0 DONE}
+		Waystones_1.16.1-7.1.1.jar Waystones {waystones@7.1.1 DONE}
+		Clumps-6.0.0.8.jar Clumps {clumps@6.0.0.8 DONE}
+		light-overlay-5.4.3.jar Light Overlay Forge {lightoverlay-forge@NONE DONE}
+		appliedenergistics2-8.0.0-beta.2.jar Applied Energistics 2 {appliedenergistics2@8.0.0-beta.2 DONE}
+		charginggadgets-1.1.1.jar Charging Gadgets {charginggadgets@1.1.1 DONE}
+		dimensionalbridgebuilder1.1.jar Dimensional Bridge Builder {dbb@1.0 DONE}
+		travellersboots-1.16.1-1.4.1.jar Traveller's Boots {travellersboots@1.4.1 DONE}
+		JEITweaker-1.16.1-1.0.1.2.jar JEI Tweaker {jeitweaker@1.0.1.2 DONE}
+		PackingTape-1.16.1-0.9.6.jar Packing Tape {packingtape@0.9.6 DONE}
+		mininggadgets-1.4.1.jar Mining Gadgets {mininggadgets@1.4.1 DONE}
+		CraftTweaker-1.16.1-7.0.0.24.jar CraftTweaker {crafttweaker@7.0.0.24 DONE}
+		extradisks-1.16.1-1.3.1.jar Extra Disks {extradisks@1.3.1 DONE}
+		forge-1.16.1-32.0.108-universal.jar Forge {forge@32.0.108 DONE}
+		MysticalAgriculture-1.16.1-4.0.2.jar Mystical Agriculture {mysticalagriculture@4.0.2 DONE}
+		ironchest-1.16.1-11.0.4.jar Iron Chests {ironchest@1.16.1-11.0.4 DONE}
+		CraftingTweaks_1.16.1-12.0.4.jar Crafting Tweaks {craftingtweaks@12.0.4 DONE}
+		forge-1.16.1-32.0.108-client.jar Minecraft {minecraft@1.16.1 DONE}
+		swingthroughgrass-1.16.1-1.5.1.jar SwingThroughGrass {swingthroughgrass@1.16.1-1.5.1 DONE}
+		MouseTweaks-2.13-mc1.16.1.jar Mouse Tweaks {mousetweaks@2.13 DONE}
+		titanium-1.16.1-3.0.4.jar Titanium {titanium@3.0.4 DONE}
+		SilentLib-1.16.1-4.7.1+59.jar Silent Lib {silentlib@4.7.1+59 DONE}
+		bluepower-1.16.1-0.5.216-alpha-universal.jar Blue Power {bluepower@0.5.216-alpha DONE}
+		jeiintegration_1.16.1-4.0.0.4.jar JEI Integration {jeiintegration@4.0.0.4 DONE}
+		flux-5.1.0.jar Flux {flux@5.1.0 DONE}
+		fl-4.1.0.jar Flux Library {fl@4.1.0 DONE}
+		Xaeros_Minimap_20.20.1_Forge_1.16.1.jar Xaero's Minimap {xaerominimap@20.20.1 DONE}
+		itemcollectors-1.0.4-mc1.16.1.jar Item Collectors {itemcollectors@1.0.4 DONE}
+		gravestone-1.16.1-1.0.6.jar Gravestone Mod {gravestone@1.16.1-1.0.6 DONE}
+		extratags-2.1g.jar Extra Tags {extratags@2.1g DONE}
+		AutoRegLib-1.6-43.jar AutoRegLib {autoreglib@1.6-43 DONE}
+		Quark-r2.2-262.jar Quark {quark@r2.2-262 DONE}
+		StorageDrawers-1.16.2-8.1.0.jar Storage Drawers {storagedrawers@1.16.2-8.1.0 DONE}
+		enderchests-1.16-1.7.0.jar EnderChests {enderchests@1.7.0 DONE}
+		factory-1.16.1-1.1.1.jar Factory Mod {factory@1.16.1-1.1.1 DONE}
+		PickleTweaks-1.16.1-5.0.1.jar Pickle Tweaks {pickletweaks@5.0.1 DONE}
+		SilentGems-1.16.1-3.6.3+100.jar Silent's Gems 3 {silentgems@3.6.3+100 DONE}
+		refinedstorageaddons-0.7.jar Refined Storage Addons {refinedstorageaddons@0.7 DONE}
+		SolarGeneration-1.16.1-2.0.1.jar Solar Generation {solargeneration@2.0.1 DONE}
+	Patchouli open book context: n/a
+	Player Count: 1 / 8; [ServerPlayerEntity['reapersremorse'/235, l='ServerLevel[Sanctuary Default World]', x=-87.73, y=70.00, z=192.52]]
+	Data Packs: vanilla, mod:netherportalfix (incompatible), mod:aiotbotania, mod:pocketstorage, mod:extendedcrafting, mod:torohealth, mod:silents_mechanisms (incompatible), mod:neat (incompatible), mod:essentials (incompatible), mod:xaeroworldmap, mod:dankstorage (incompatible), mod:powah, mod:buildinggadgets (incompatible), mod:forgivingvoid (incompatible), mod:ironshulkerbox (incompatible), mod:morpheus (incompatible), mod:mekanismgenerators, mod:speedyhoppers (incompatible), mod:maessentials (incompatible), mod:jeresources (incompatible), mod:shetiphiancore, mod:mysticalagradditions, mod:cobblegenrandomizer (incompatible), mod:refinedstorage, mod:upgradednetherite, mod:w2w, mod:industrialforegoing (incompatible), mod:torchmaster (incompatible), mod:overloaded_cb, mod:endertanks, mod:mekanismadditions, mod:lollipop, mod:ironfurnaces (incompatible), mod:industrialmeat, mod:silentgear (incompatible), mod:curios (incompatible), mod:botania, mod:gardenofglass, mod:patchouli (incompatible), mod:blockcarpentry, mod:mysticalcustomization, mod:elevatorid, mod:ftbultimine, mod:mekanismtools, mod:wormhole, mod:computercraft (incompatible), mod:aiimprovements (incompatible), mod:cloth-config, mod:trashcans, mod:speedyladders, mod:cobblefordays (incompatible), mod:cyclic (incompatible), mod:betteradvancements (incompatible), mod:jmc, mod:quarkoddities, mod:clienttweaks (incompatible), mod:cucumber, mod:trashslot (incompatible), mod:enderrift (incompatible), mod:craftingstation (incompatible), mod:jei (incompatible), mod:kubejs (incompatible), mod:mekanism, mod:flymod, mod:invtweaks (incompatible), mod:waystones (incompatible), mod:clumps (incompatible), mod:lightoverlay-forge (incompatible), mod:appliedenergistics2, mod:charginggadgets (incompatible), mod:dbb, mod:travellersboots (incompatible), mod:jeitweaker, mod:packingtape, mod:mininggadgets (incompatible), mod:crafttweaker, mod:extradisks, mod:forge, mod:mysticalagriculture, mod:ironchest, mod:craftingtweaks (incompatible), mod:swingthroughgrass (incompatible), mod:mousetweaks (incompatible), mod:titanium (incompatible), mod:silentlib (incompatible), mod:bluepower (incompatible), mod:jeiintegration, mod:flux, mod:fl, mod:xaerominimap, mod:itemcollectors, mod:gravestone, mod:extratags (incompatible), mod:autoreglib (incompatible), mod:quark, mod:storagedrawers (incompatible), mod:enderchests, mod:factory, mod:pickletweaks, mod:silentgems (incompatible), mod:refinedstorageaddons, mod:solargeneration, file/bluepower (incompatible)
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'
